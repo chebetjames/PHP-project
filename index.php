@@ -21,8 +21,45 @@ if (!isset($_SESSION["admin"])) {
 <body>
   <div class="container">
     <h1 class="dash">Welcome to Dashboard</h1>
+    <div class="row">
+      <div class="col-md-8">
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+      <div class="col-md-4">
+        <a href="enrollment.php" class="btn btn-success">Enroll New Student</a>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="students.php" class="btn btn-primary btn-block">View All Students</a>
+      </div>
+      <div class="col-md-4">
+        <a href="add-student.php" class="btn btn-primary btn-block">Add Student</a>
+      </div>
+      <div class="col-md-4">
+        <a href="edit-student.php" class="btn btn-primary btn-block">Edit Student</a>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="delete-student.php" class="btn btn-danger btn-block">Delete Student</a>
+      </div>
+      <div class="col-md-4">
+        <a href="attendance.php" class="btn btn-info btn-block">Take Attendance</a>
+      </div>
+      <div class="col-md-4">
+        <a href="attendance-report.php" class="btn btn-info btn-block">Attendance Report</a>
+      </div>
+    </div>
+    <hr>
     <a href="logout.php" class="btn btn-warning">Log out</a>
-    <img src= "actress.jpg" alt = "Admin Photo" width = "300" height="160">
   </div>
+</body>
+</html>
   
   
